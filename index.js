@@ -6,37 +6,42 @@ function reverseString(str) {
 	}
 	return reversed;
 }
-// console.log(reverseString("hello"));
+console.log(reverseString("hello"));
 
 // Problem Two - Count Vowels in a String
 function vowelCounter(sentence) {
 	let totalVowel = 0;
 	const allVowels = ["a", "e", "i", "o", "u"];
+
 	for (let i = 0; i < sentence.length; i++) {
 		const element = sentence[i];
+
 		for (let j = 0; j < allVowels.length; j++) {
 			if (element === allVowels[j]) {
 				totalVowel = totalVowel + 1;
 			}
 		}
 	}
+
 	return totalVowel;
 }
-// console.log(vowelCounter("programming"));
+console.log(vowelCounter("programming"));
 
 // Problem Three - Check for Palindrome
 function checkPalindrome(str) {
 	let reversed = "";
+
 	for (let i = str.length - 1; i >= 0; i--) {
 		reversed += str[i];
 	}
+
 	if (str === reversed) {
 		return true;
 	} else {
 		return false;
 	}
 }
-// console.log(checkPalindrome("hello"));
+console.log(checkPalindrome("hello"));
 
 // Problem Four = Max Number Finder
 function maxNumberFinder(arr) {
@@ -49,7 +54,7 @@ function maxNumberFinder(arr) {
 	}
 	return maxNumber;
 }
-// console.log(maxNumberFinder([5, 1, 9, 3]));
+console.log(maxNumberFinder([5, 1, 9, 3]));
 
 // Problem Five - Remove Duplicates from an Array
 function removeDuplicates(arr) {
@@ -63,7 +68,7 @@ function removeDuplicates(arr) {
 
 	return noDuplicates;
 }
-// console.log(removeDuplicates([1, 2, 2, 3, 4, 4]));
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4]));
 
 //  Problem Six - Some of an array
 function arraySomeGenerator(array) {
@@ -73,7 +78,7 @@ function arraySomeGenerator(array) {
 	}
 	return total;
 }
-// console.log(arraySomeGenerator([1, 2, 3, 4]));
+console.log(arraySomeGenerator([1, 2, 3, 4]));
 
 // Problem Seven - Even Numbers Finder
 function evenNumbersFinder(numbers) {
@@ -98,7 +103,7 @@ function capitalizeWordMaker(sentence) {
 
 	return result.join(" ");
 }
-// console.log(capitalizeWordMaker("hello world"));
+console.log(capitalizeWordMaker("hello world"));
 
 // Problem Nine - Find the Factorial of a Number
 function factorialNumberFinder(num) {
@@ -108,7 +113,7 @@ function factorialNumberFinder(num) {
 	}
 	return factorial;
 }
-// console.log(factorialNumberFinder(5));
+console.log(factorialNumberFinder(5));
 
 // Problem Ten -  PingPong Challenge
 function pingPongChallenge() {
@@ -124,4 +129,4 @@ function pingPongChallenge() {
 		}
 	}
 }
-// pingPongChallenge();
+pingPongChallenge();
